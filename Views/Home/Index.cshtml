@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container-fluid text-center">
+    <h1 class="display-6">Welcome</h1>
+    <p></br>Please select <strong>Login</strong> to access your personal space </br> or <strong>Register</strong> to create an account</p>
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-3">
+
+            @* // Accessing Login view *@
+            <button type="button" class="btn btn-block btn-primary btn-lg">
+                <a class="nav-link text-white" id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
+            </button>
+        </div>
+        <div class="col-md-3">
+
+            @* // Accessing Registration view *@
+            <button type="button" class="btn btn-block btn-danger btn-lg">
+                <a class="nav-link text-white" id="register" asp-area="Identity" asp-page="/Account/Register">Register</a>
+            </button>
+        </div>
+    </div>
+</div>
