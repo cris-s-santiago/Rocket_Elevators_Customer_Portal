@@ -100,7 +100,6 @@ C:\Odyssey\Week11\Rocket_Elevators_Customer_Portal\obj\Debug\net5.0\Rocket_Eleva
 C:\Odyssey\Week11\Rocket_Elevators_Customer_Portal\obj\Debug\net5.0\Rocket_Elevators_Customer_Portal.TagHelpers.output.cache
 C:\Odyssey\Week11\Rocket_Elevators_Customer_Portal\obj\Debug\net5.0\Rocket_Elevators_Customer_Portal.RazorCoreGenerate.cache
 C:\Odyssey\Week11\Rocket_Elevators_Customer_Portal\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\Odyssey\Week11\Rocket_Elevators_Customer_Portal\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Odyssey\Week11\Rocket_Elevators_Customer_Portal\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Odyssey\Week11\Rocket_Elevators_Customer_Portal\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Odyssey\Week11\Rocket_Elevators_Customer_Portal\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -326,3 +325,5 @@ C:\Users\Diana\Documents\projetos\week 11\Rocket_Elevatos_customer_Portal\obj\De
 C:\Users\Diana\Documents\projetos\week 11\Rocket_Elevatos_customer_Portal\obj\Debug\net5.0\Rocket_Elevators_Customer_Portal.pdb
 C:\Users\Diana\Documents\projetos\week 11\Rocket_Elevatos_customer_Portal\obj\Debug\net5.0\Rocket_Elevators_Customer_Portal.genruntimeconfig.cache
 C:\Users\Diana\Documents\projetos\week 11\Rocket_Elevatos_customer_Portal\obj\Debug\net5.0\Razor\Views\Home\Intervention.cshtml.g.cs
+C:\Odyssey\Week11\Rocket_Elevators_Customer_Portal\obj\Debug\net5.0\Razor\Views\Home\Intervention.cshtml.g.cs
+C:\Odyssey\Week11\Rocket_Elevators_Customer_Portal\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_AuthLayout.cshtml.g.cs

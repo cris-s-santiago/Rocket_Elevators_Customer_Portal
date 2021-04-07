@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Diana\\Documents\\projetos\\week 11\\Rocket_Elevatos_customer_Portal\\Rocket_Elevators_Customer_Portal.csproj": {}
+    "C:\\Odyssey\\Week11\\Rocket_Elevators_Customer_Portal\\Rocket_Elevators_Customer_Portal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Diana\\Documents\\projetos\\week 11\\Rocket_Elevatos_customer_Portal\\Rocket_Elevators_Customer_Portal.csproj": {
+    "C:\\Odyssey\\Week11\\Rocket_Elevators_Customer_Portal\\Rocket_Elevators_Customer_Portal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Diana\\Documents\\projetos\\week 11\\Rocket_Elevatos_customer_Portal\\Rocket_Elevators_Customer_Portal.csproj",
+        "projectUniqueName": "C:\\Odyssey\\Week11\\Rocket_Elevators_Customer_Portal\\Rocket_Elevators_Customer_Portal.csproj",
         "projectName": "Rocket_Elevators_Customer_Portal",
-        "projectPath": "C:\\Users\\Diana\\Documents\\projetos\\week 11\\Rocket_Elevatos_customer_Portal\\Rocket_Elevators_Customer_Portal.csproj",
-        "packagesPath": "C:\\Users\\Diana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Diana\\Documents\\projetos\\week 11\\Rocket_Elevatos_customer_Portal\\obj\\",
+        "projectPath": "C:\\Odyssey\\Week11\\Rocket_Elevators_Customer_Portal\\Rocket_Elevators_Customer_Portal.csproj",
+        "packagesPath": "C:\\Users\\criss\\.nuget\\packages\\",
+        "outputPath": "C:\\Odyssey\\Week11\\Rocket_Elevators_Customer_Portal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Diana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\criss\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
