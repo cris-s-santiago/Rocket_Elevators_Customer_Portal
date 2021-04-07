@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Interventions";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+
+    <div class="bold font-raleway wow fadeInUp animated">
+        <h2 class="fs-55 fw-400 text-center">INTERVENTIONS</h2>
+    </div>
+
+</div>
+
+
+<!-- /.card-header -->
+<!-- form start -->
+<form name="formintervention" method="post" id="formintervention">
+    <div class="card-body">
+        <div class="form-group ">
+            <label for="building">Building</label>
+            <select id="building" required class="form-control pointer" name="building_id">
+                <option selected value="0">--- Select ---</option>
+                @Html.Raw(ViewBag.BuldingSos)
+            </select>
+        </div>
+        <div class="form-group battery">
+            <label for="battery">Battery</label>
+            <select id="battery" required class="form-control pointer" name="battery_id">
+                <option selected value="0">--- Select ---</option>
+                @Html.Raw(ViewBag.BatterySos)
+            </select>
+        </div>
+        <div class="form-group column">
+
+            <label for="column">Column</label>
+            <select id="column" required class="form-control pointer" name="column_id">
+                <option selected value="0">--- Select ---</option>
+                @Html.Raw(ViewBag.ColumnSos)
+            </select>
+        </div>
+        <div class="form-group  elevator">
+            <label for="elevator">Elevator</label>
+            <select id="elevator" required class="form-control pointer" name="elevator_id">
+                <option selected value="0">--- Select ---</option>
+                @Html.Raw(ViewBag.ElevatorSos)
+            </select>
+        </div>
+        <div class="form-group description">
+            <label>Description</label>
+            <textarea class="form-control" id="description" rows="3"
+                      placeholder="Enter ..."></textarea>
+        </div>
+    </div>
+    <!-- /.card-body -->
+
+    <div class="col-md-12">
+        <button class="btn btn-primary btn-lg btn-block" id="sendbtn">SUBMIT</button>
+    </div>
+</form>
+
+
+
