@@ -1,6 +1,8 @@
-﻿function GetDataCustomer(customer) {
+﻿//------------------------------------------------- Intervention -----------------------------------------------------------\\
+function GetDataCustomer(customer) {
 
-    $(document).ready(function () {
+    $(document).ready(function () {        
+
         var id = "";
         // Calls the function to hide the fields
         hideAll();
@@ -109,4 +111,161 @@
             $("#elevator").hide();
         }
     });
+}
+
+//------------------------------------------------ Create Intervention ----------------------------------------------------\\
+
+function createIntervention() {
+    var data = {
+        customer_id: $('#customer_id').val(),
+        author: $('#customer_id').val(),
+        building_id: $('#building-select').val(),
+        battery_id: $('#battery-select').val(),
+        column_id: $('#column-select').val(),
+        elevator_id: $('#elevator-select').val(),
+        report: $('#description').val()
+    };
+
+    $.ajax({
+        url: 'https://localhost:5001/api/Interventions',
+        type: 'POST',
+        data: JSON.stringify(data),
+        headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "HEAD, GET, POST, PUT, PATCH, DELETE",
+            "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        success: function (result) {
+            alert('Intervention created successfully!');
+            $('.pointer').prop('selected', function () {
+                this.value = "";
+                $("#battery").hide();
+                $("#column").hide();
+                $("#elevator").hide();
+            });
+            $('#description').val("");
+            return false;
+        }
+    });
+    return false;
+}
+
+//---------------------------------------------- InterventionViaProduct ------------------------------------------------------\\
+
+function Intervention_Product(buildingId, batteryId, columnId, elevatorId, customer) {
+
+    $(document).ready(function () {
+
+        if (buildingId) {
+            let select = [new Option(`Building #${buildingId}`, buildingId)];
+            $("#building-select").html(select);
+            hideAll();
+        }
+
+        // ------------ Fill the form with data after choose a battery ---------------- //
+        if (batteryId) {
+
+            for (b of customer.buildings) {
+                for (bat of b.batteries) {
+                    if (bat.id == batteryId) {
+                        building = b;
+                        battery = bat;
+                        break;
+                    }                    
+                }
+            }
+
+            let select = [new Option(`Building #${building.id}`, building.id)];
+            $("#building-select").html(select);
+
+            let selectBat = [new Option(`Battery #${battery.id}`, battery.id)];
+            $("#battery-select").html(selectBat);
+            hideColumn();
+        }
+
+        // ------------ Fill the form with data after choose a column ---------------- //
+        if (columnId) {
+            let building;
+            let battery;
+            let column;
+
+            for (b of customer.buildings) {
+                for (bat of b.batteries) {
+                    for (c of bat.columns) {
+                        if (c.id == columnId) {
+                            building = b;
+                            battery = bat;
+                            column = c;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            let select = [new Option(`Building #${building.id}`, building.id)];
+            $("#building-select").html(select);
+
+            let selectBat = [new Option(`Battery #${battery.id}`, battery.id)];
+            $("#battery-select").html(selectBat);
+
+            let selectCol = [new Option(`Column #${column.id}`, column.id)];
+            $("#column-select").html(selectCol);
+
+            hideElevator();
+
+        }
+
+        // ------------ Fill the form with data after choose an elevator ---------------- //
+        if (elevatorId) {
+            let building;
+            let battery;
+            let column;
+            let elevator;
+
+            for (bld of customer.buildings) {
+                for (batt of bld.batteries) {
+                    for (col of batt.columns) {
+                        for (elv of col.elevators) {
+                            if (elv.id == elevatorId) {
+                                building = bld;
+                                battery = batt;
+                                column = col;
+                                elevator = elv;
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+
+            let select = [new Option(`Building #${building.id}`, building.id)];
+            $("#building-select").html(select);
+
+            let selectBat = [new Option(`Battery #${battery.id}`, battery.id)];
+            $("#battery-select").html(selectBat);
+
+            let selectCol = [new Option(`Column #${column.id}`, column.id)];
+            $("#column-select").html(selectCol);
+
+            let selectElev = [new Option(`Elevator #${elevator.id}`, elevator.id)];
+            $("#elevator-select").html(selectElev);
+        }
+    });
+
+    // functions hiding    
+    function hideAll() {
+        $("#battery").hide();
+        hideColumn();
+    }
+
+    function hideColumn() {
+        $("#column").hide();
+        hideElevator();
+    }
+
+    function hideElevator() {
+        $("#elevator").hide();
+    }
 }

@@ -47,7 +47,30 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
 
         public IActionResult Product()
         {
-            return View();
+            var customer = new HttpClient();
+            var email = _userManager.GetUserName(User);
+            var responseApiCustomer = customer.GetStringAsync("https://localhost:5001/api/customers/FullInfo/" + email).GetAwaiter().GetResult();
+            Customer customerInfo = JsonConvert.DeserializeObject<Customer>(responseApiCustomer);
+            ViewBag.customer = customerInfo;
+            
+            return View(customerInfo);
+        }
+
+        public IActionResult InterventionViaProduct( string columnId, string elevatorId, string buildingId, string batteryId)
+        {
+            var customer = new HttpClient();
+            var email = _userManager.GetUserName(User);
+            var responseApiCustomer = customer.GetStringAsync("https://localhost:5001/api/customers/FullInfo/" + email).GetAwaiter().GetResult();
+            Customer customerInfo = JsonConvert.DeserializeObject<Customer>(responseApiCustomer);
+            
+            ViewBag.customer = customerInfo;
+            ViewBag.columnId = columnId;
+            ViewBag.elevatorId = elevatorId;
+            ViewBag.buildingId = buildingId;
+            ViewBag.batteryId = batteryId;
+            ViewBag.pageProduct = true;
+
+            return View("~/Views/Home/Intervention.cshtml");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
