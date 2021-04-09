@@ -50,6 +50,20 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
             return View();
         }
 
+        public IActionResult Profile()
+        {
+            var customer = new HttpClient();
+            var email = _userManager.GetUserName(User);
+            var responseApiCustomer = customer.GetStringAsync("https://localhost:5001/api/customers/FullInfo/" + email).GetAwaiter().GetResult();
+            Customer customerInfo = JsonConvert.DeserializeObject<Customer>(responseApiCustomer);
+            Console.WriteLine("***************");
+            Console.WriteLine(customerInfo.buildings.Where(building => building.id == 2));
+            Console.WriteLine("***************");
+            ViewBag.customer = customerInfo;
+
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

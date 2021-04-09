@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/js/jquery-3.5.1.min.js"></script>
+<script src="~/js/Intervention.js"></script>
+<div class="container">
+
+    <div class="bold font-raleway wow fadeInUp animated">
+        <br/>
+        <h2 class="fs-40 fw-400 text-center">PROFILE SETTINGS</h2>
+    </div>
+
+</div>
+
+<script>
+    let customer = JSON.parse('@Html.Raw(Json.Serialize(ViewBag.customer))');
+    GetDataCustomer(customer);
+
+    function profileUpDate() {
+        var profileUpDate = {
+            company_name: $('#company_name').val(),
+            full_name_of_company_contact: $('#full_name_of_company_contact').val(),
+            company_contact_phone: $('#company_contact_phone').val(),
+            email_of_company_contact: $('#email_of_company_contact').val(),
+            company_description: $('#company_description').val(),
+            full_name_of_service_technical_authority: $('#full_name_of_service_technical_authority').val(),
+            technical_authority_phone_for_service_: $('#technical_authority_phone_for_service_').val(),
+            technical_manager_email_for_service: $('#technical_manager_email_for_service').val(),
+        };
+
+        $.ajax({
+            url: 'https://localhost:5001/api/Profile',
+            type: 'PUT',
+            data: JSON.stringify(data),
+            headers: {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "HEAD, GET, POST, PUT, PATCH, DELETE",
+                "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            success: function (result) {
+                alert('Your profile was successfully updated!');
+                return false;
+            }
+        });
+        return false;
+    }
+</script>
+
+<!-- /.card-header -->
+<!-- form start -->
+<form onsubmit="return createIntervention()" id="interventionForm">
+    <div class="card-body">
+        <div class="form-group ">
+            <label for="customer">Customer</label>
+            <input required type="text" id="customer_name" name="customer_name" class="form-control" value="@ViewBag.customer.company_name" readonly disabled>
+            <input type="hidden" id="customer_id" name="customer_id" value="@ViewBag.customer.id">
+        </div>
+        <div class="form-group ">
+            <label for="building">Building</label>
+            <select id="building-select" required class="form-control pointer" name="building_id">
+                <option selected value="">--- Select ---</option>
+            </select>
+        </div>
+        <div id="battery" class="form-group battery">
+            <label for="battery">Battery</label>
+            <select id="battery-select" class="form-control pointer" name="battery_id">
+                <option selected value="">--- Select ---</option>
+            </select>
+        </div>
+        <div id="column" class="form-group column">
+            <label for="column">Column</label>
+            <select id="column-select" class="form-control pointer" name="column_id">
+                <option selected value="">--- Select ---</option>
+            </select>
+        </div>
+        <div id="elevator" class="form-group  elevator">
+            <label for="elevator">Elevator</label>
+            <select id="elevator-select" class="form-control pointer" name="elevator_id">
+                <option selected value="">--- Select ---</option>
+            </select>
+        </div>
+        <div class="form-group description">
+            <label>Description</label>
+            <textarea required class="form-control" name="description" id="description" rows="3" placeholder="Enter ..."></textarea>
+        </div>
+    </div>
+    <!-- /.card-body -->
+
+    <div class="col-md-12">
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="btnIntervention"><i></i> SUBMIT INTERVENTION</button>
+    </div>
+</form>
+
+
+
+
+
+
