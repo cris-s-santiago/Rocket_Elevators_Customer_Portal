@@ -39,12 +39,17 @@
             },
             success: function (result) {
                 alert('Intervention created successfully!');
+                $('.pointer').prop('selected', function () {
+                    this.value = "";
+                    $("#battery").hide();
+                    $("#column").hide();
+                    $("#elevator").hide();
+                });
+                $('#description').val("");
                 return false;
             }
         });
         return false;
-
-        document.getElementById("interventionForm").reset();
     }
 </script>
 
