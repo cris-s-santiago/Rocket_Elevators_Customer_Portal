@@ -492,3 +492,4 @@ C:\Users\danig\OneDrive\Área de Trabalho\Week13DotNEt\Rocket_Elevators_Customer
 C:\Users\danig\OneDrive\Área de Trabalho\Week13DotNEt\Rocket_Elevators_Customer_Portal\obj\Debug\net5.0\ref\Rocket_Elevators_Customer_Portal.dll
 C:\Users\danig\OneDrive\Área de Trabalho\Week13DotNEt\Rocket_Elevators_Customer_Portal\obj\Debug\net5.0\Rocket_Elevators_Customer_Portal.pdb
 C:\Users\danig\OneDrive\Área de Trabalho\Week13DotNEt\Rocket_Elevators_Customer_Portal\obj\Debug\net5.0\Rocket_Elevators_Customer_Portal.genruntimeconfig.cache
+C:\Odyssey\Week11\Rocket_Elevators_Customer_Portal\obj\Debug\net5.0\Razor\Views\Home\Product.cshtml.g.cs
