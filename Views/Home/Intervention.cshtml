@@ -27,10 +27,9 @@
         };
 
         $.ajax({
-            
+            url: 'https://localhost:5001/api/Interventions',
             type: 'POST',
-            url: "https://localhost:5001/api/Interventions",
-            data: data,
+            data: JSON.stringify(data),
             headers: {
                 "Access-Control-Allow-Origin": "*",
                 "Access-Control-Allow-Methods": "HEAD, GET, POST, PUT, PATCH, DELETE",
@@ -40,12 +39,12 @@
             },
             success: function (result) {
                 alert('Intervention created successfully!');
-                alert('Intervention created successfully!');
                 return false;
             }
         });
-
         return false;
+
+        document.getElementById("interventionForm").reset();
     }
 </script>
 

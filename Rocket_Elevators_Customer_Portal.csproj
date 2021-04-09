@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Web.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Web.config" />
     <None Include="wwwroot\images\icone.png" />
     <None Include="wwwroot\images\logo1.png" />
   </ItemGroup>
