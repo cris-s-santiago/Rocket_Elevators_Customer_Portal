@@ -493,6 +493,18 @@ C:\Users\danig\OneDrive\Área de Trabalho\Week13DotNEt\Rocket_Elevators_Customer
 C:\Users\danig\OneDrive\Área de Trabalho\Week13DotNEt\Rocket_Elevators_Customer_Portal\obj\Debug\net5.0\Rocket_Elevators_Customer_Portal.pdb
 C:\Users\danig\OneDrive\Área de Trabalho\Week13DotNEt\Rocket_Elevators_Customer_Portal\obj\Debug\net5.0\Rocket_Elevators_Customer_Portal.genruntimeconfig.cache
 C:\Odyssey\Week11\Rocket_Elevators_Customer_Portal\obj\Debug\net5.0\Razor\Views\Home\Product.cshtml.g.cs
+C:\Odyssey\Week_11\bin\Debug\net5.0\Rocket_Elevators_Customer_Portal.dll
+C:\Odyssey\Week_11\bin\Debug\net5.0\Rocket_Elevators_Customer_Portal.Views.dll
+C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Odyssey\Week_11\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Odyssey\Week_11\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Odyssey\Week_11\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\appsettings.Development.json
 C:\Odyssey\Week_11\bin\Debug\net5.0\appsettings.json
 C:\Odyssey\Week_11\bin\Debug\net5.0\Rocket_Elevators_Customer_Portal.StaticWebAssets.xml
@@ -500,18 +512,13 @@ C:\Odyssey\Week_11\bin\Debug\net5.0\Rocket_Elevators_Customer_Portal.exe
 C:\Odyssey\Week_11\bin\Debug\net5.0\Rocket_Elevators_Customer_Portal.deps.json
 C:\Odyssey\Week_11\bin\Debug\net5.0\Rocket_Elevators_Customer_Portal.runtimeconfig.json
 C:\Odyssey\Week_11\bin\Debug\net5.0\Rocket_Elevators_Customer_Portal.runtimeconfig.dev.json
-C:\Odyssey\Week_11\bin\Debug\net5.0\Rocket_Elevators_Customer_Portal.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\ref\Rocket_Elevators_Customer_Portal.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\Rocket_Elevators_Customer_Portal.pdb
-C:\Odyssey\Week_11\bin\Debug\net5.0\Rocket_Elevators_Customer_Portal.Views.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\Rocket_Elevators_Customer_Portal.Views.pdb
 C:\Odyssey\Week_11\bin\Debug\net5.0\Humanizer.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
-C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
-C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
@@ -520,11 +527,7 @@ C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
-C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
-C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
@@ -549,7 +552,6 @@ C:\Odyssey\Week_11\bin\Debug\net5.0\System.Composition.Convention.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\System.Composition.Hosting.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\System.Composition.Runtime.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\System.Composition.TypedParts.dll
-C:\Odyssey\Week_11\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\System.Runtime.Caching.dll
@@ -607,12 +609,10 @@ C:\Odyssey\Week_11\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resourc
 C:\Odyssey\Week_11\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Odyssey\Week_11\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Odyssey\Week_11\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Odyssey\Week_11\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Odyssey\Week_11\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Odyssey\Week_11\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
@@ -645,6 +645,7 @@ C:\Odyssey\Week_11\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml
 C:\Odyssey\Week_11\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Odyssey\Week_11\obj\Debug\net5.0\Razor\Views\Home\Intervention.cshtml.g.cs
 C:\Odyssey\Week_11\obj\Debug\net5.0\Razor\Views\Home\Product.cshtml.g.cs
+C:\Odyssey\Week_11\obj\Debug\net5.0\Razor\Views\Home\Profile.cshtml.g.cs
 C:\Odyssey\Week_11\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Odyssey\Week_11\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Odyssey\Week_11\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
@@ -659,4 +660,3 @@ C:\Odyssey\Week_11\obj\Debug\net5.0\Rocket_Elevators_Customer_Portal.dll
 C:\Odyssey\Week_11\obj\Debug\net5.0\ref\Rocket_Elevators_Customer_Portal.dll
 C:\Odyssey\Week_11\obj\Debug\net5.0\Rocket_Elevators_Customer_Portal.pdb
 C:\Odyssey\Week_11\obj\Debug\net5.0\Rocket_Elevators_Customer_Portal.genruntimeconfig.cache
-C:\Odyssey\Week_11\obj\Debug\net5.0\Razor\Views\Home\Profile.cshtml.g.cs
