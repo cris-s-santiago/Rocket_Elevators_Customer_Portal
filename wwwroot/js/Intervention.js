@@ -116,18 +116,19 @@ function GetDataCustomer(customer) {
 //------------------------------------------------ Create Intervention ----------------------------------------------------\\
 
 function createIntervention() {
+
     var data = {
-        customer_id: $('#customer_id').val(),
-        author: $('#customer_id').val(),
-        building_id: $('#building-select').val(),
-        battery_id: $('#battery-select').val(),
-        column_id: $('#column-select').val(),
-        elevator_id: $('#elevator-select').val(),
-        report: $('#description').val()
+        customer_id: $('#customer_id').val() == "" ? null : $('#customer_id').val(),
+        author: $('#customer_id').val() == "" ? null : $('#customer_id').val(),
+        building_id: $('#building-select').val() == "" ? null : $('#building-select').val(),
+        battery_id: $('#battery-select').val() == "" ? null : $('#battery-select').val(),
+        column_id: $('#column-select').val() == "" ? null : $('#column-select').val(),
+        elevator_id: $('#elevator-select').val() == "" ? null : $('#elevator-select').val(),
+        report: $('#description').val() == "" ? null : $('#description').val()
     };
 
     $.ajax({
-        url: 'https://localhost:5001/api/Interventions',
+        url: 'https://rocket-elevators.azurewebsites.net/api/Interventions',
         type: 'POST',
         data: JSON.stringify(data),
         headers: {
