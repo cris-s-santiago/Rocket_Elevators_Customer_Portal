@@ -36,7 +36,7 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
         {
             var customer = new HttpClient();
             var email = _userManager.GetUserName(User);
-            var responseApiCustomer = customer.GetStringAsync("https://localhost:5001/api/customers/FullInfo/" + email).GetAwaiter().GetResult();
+            var responseApiCustomer = customer.GetStringAsync("https://rocket-elevators.azurewebsites.net/api/customers/FullInfo/" + email).GetAwaiter().GetResult();
             Customer customerInfo = JsonConvert.DeserializeObject<Customer>(responseApiCustomer);
             Console.WriteLine("***************");
             Console.WriteLine(customerInfo.buildings.Where(building => building.id == 2));
@@ -50,7 +50,7 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
         {
             var customer = new HttpClient();
             var email = _userManager.GetUserName(User);
-            var responseApiCustomer = customer.GetStringAsync("https://localhost:5001/api/customers/FullInfo/" + email).GetAwaiter().GetResult();
+            var responseApiCustomer = customer.GetStringAsync("https://rocket-elevators.azurewebsites.net/api/customers/FullInfo/" + email).GetAwaiter().GetResult();
             Customer customerInfo = JsonConvert.DeserializeObject<Customer>(responseApiCustomer);
             ViewBag.customer = customerInfo;
             
@@ -61,7 +61,7 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
         {
             var customer = new HttpClient();
             var email = _userManager.GetUserName(User);
-            var responseApiCustomer = customer.GetStringAsync("https://localhost:5001/api/customers/FullInfo/" + email).GetAwaiter().GetResult();
+            var responseApiCustomer = customer.GetStringAsync("https://rocket-elevators.azurewebsites.net/api/customers/FullInfo/" + email).GetAwaiter().GetResult();
             Customer customerInfo = JsonConvert.DeserializeObject<Customer>(responseApiCustomer);
             ViewBag.customer = customerInfo;
 
@@ -72,7 +72,7 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
         {
             var customer = new HttpClient();
             var email = _userManager.GetUserName(User);
-            var responseApiCustomer = customer.GetStringAsync("https://localhost:5001/api/customers/FullInfo/" + email).GetAwaiter().GetResult();
+            var responseApiCustomer = customer.GetStringAsync("https://rocket-elevators.azurewebsites.net/api/customers/FullInfo/" + email).GetAwaiter().GetResult();
             Customer customerInfo = JsonConvert.DeserializeObject<Customer>(responseApiCustomer);
             
             ViewBag.customer = customerInfo;
@@ -98,7 +98,7 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
                 var content = new StringContent(JsonConvert.SerializeObject(data));
                 content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 
-                var request = http.PostAsync("https://localhost:5001/api/Customers", content);
+                var request = http.PostAsync("https://rocket-elevators.azurewebsites.net/api/Customers", content);
 
                 request.Wait();
 

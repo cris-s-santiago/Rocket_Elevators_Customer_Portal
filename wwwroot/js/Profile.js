@@ -13,7 +13,7 @@
         };
 
         $.ajax({
-            url: 'https://localhost:5001/api/Customers',
+            url: 'https://rocket-elevators.azurewebsites.net/api/Customers',
             type: 'PUT',
             data: JSON.stringify(data),
             headers: {
