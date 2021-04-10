@@ -8,8 +8,8 @@ namespace Rocket_Elevators_Customer_Portal.Models
     public class Column
     {
         public int id { get; set; }
-        public string building_type { get; set; }
-        public int number_of_floors_serve { get; set; }
+        public string type_building { get; set; }
+        public int number_floors_served { get; set; }
         public string status { get; set; }
         public string information { get; set; }
         public string notes { get; set; }

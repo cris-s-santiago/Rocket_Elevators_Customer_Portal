@@ -19,11 +19,12 @@
         var data = {
             customer_id: $('#customer_id').val(),
             author: $('#customer_id').val(),
+            author_type: "Customer",
             building_id: $('#building-select').val(),
             battery_id: $('#battery-select').val(),
             column_id: $('#column-select').val(),
             elevator_id: $('#elevator-select').val(),
-            report: $('#description').val()
+            report: $('#description').val()            
         };
 
         $.ajax({

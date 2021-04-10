@@ -33,7 +33,12 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
 
         public IActionResult Intervention()
         {
-            var customer = new HttpClient();
+            var httpClientHandler = new HttpClientHandler();
+            httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) =>
+            {
+                return true;
+            };
+            var customer = new HttpClient(httpClientHandler);
             var email = _userManager.GetUserName(User);
             var responseApiCustomer = customer.GetStringAsync("https://localhost:5001/api/customers/FullInfo/" + email).GetAwaiter().GetResult();
             Customer customerInfo = JsonConvert.DeserializeObject<Customer>(responseApiCustomer);
