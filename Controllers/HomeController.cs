@@ -11,6 +11,7 @@ using System.Net.Http;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Identity;
 using Rocket_Elevators_Customer_Portal.Areas.Identity.Data;
+using System.Net.Http.Headers;
 
 namespace Rocket_Elevators_Customer_Portal.Controllers
 {
@@ -56,6 +57,17 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
             return View(customerInfo);
         }
 
+        public IActionResult Profile()
+        {
+            var customer = new HttpClient();
+            var email = _userManager.GetUserName(User);
+            var responseApiCustomer = customer.GetStringAsync("https://localhost:5001/api/customers/FullInfo/" + email).GetAwaiter().GetResult();
+            Customer customerInfo = JsonConvert.DeserializeObject<Customer>(responseApiCustomer);
+            ViewBag.customer = customerInfo;
+
+            return View();
+        }
+
         public IActionResult InterventionViaProduct( string columnId, string elevatorId, string buildingId, string batteryId)
         {
             var customer = new HttpClient();
@@ -71,6 +83,35 @@ namespace Rocket_Elevators_Customer_Portal.Controllers
             ViewBag.pageProduct = true;
 
             return View("~/Views/Home/Intervention.cshtml");
+        }
+
+        [HttpPost]
+        public ActionResult UpdateCustomer(Customer custumerInfo)
+        {
+            using (var http = new HttpClient())
+            {
+                // Define authorization headers here, if any
+                // http.DefaultRequestHeaders.Add("Authorization", authorizationHeaderValue);
+
+                var data = custumerInfo;
+
+                var content = new StringContent(JsonConvert.SerializeObject(data));
+                content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+
+                var request = http.PostAsync("https://localhost:5001/api/Customers", content);
+
+                request.Wait();
+
+                var result = request.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Profile");
+                }
+            }
+
+            //ModelState.AddModelError(string.Empty, "Server Error. Please contact administrator.");
+
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -659,3 +659,4 @@ C:\Odyssey\Week_11\obj\Debug\net5.0\Rocket_Elevators_Customer_Portal.dll
 C:\Odyssey\Week_11\obj\Debug\net5.0\ref\Rocket_Elevators_Customer_Portal.dll
 C:\Odyssey\Week_11\obj\Debug\net5.0\Rocket_Elevators_Customer_Portal.pdb
 C:\Odyssey\Week_11\obj\Debug\net5.0\Rocket_Elevators_Customer_Portal.genruntimeconfig.cache
+C:\Odyssey\Week_11\obj\Debug\net5.0\Razor\Views\Home\Profile.cshtml.g.cs

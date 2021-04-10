@@ -33,43 +33,45 @@
 </script>
 
 <form onsubmit="return createIntervention()" id="interventionForm">
-    <div class="card-body">
-        <div class="form-group ">
-            <label for="customer">Customer</label>
-            <input required type="text" id="customer_name" name="customer_name" class="form-control" value="@ViewBag.customer.company_name" readonly disabled>
-            <input type="hidden" id="customer_id" name="customer_id" value="@ViewBag.customer.id">
+    <div id="quote_form" class="container">
+        <div class="card-body">
+            <div class="form-group ">
+                <label for="customer">Customer</label>
+                <input required type="text" id="customer_name" name="customer_name" class="form-control" value="@ViewBag.customer.company_name" readonly disabled>
+                <input type="hidden" id="customer_id" name="customer_id" value="@ViewBag.customer.id">
+            </div>
+            <div class="form-group ">
+                <label for="building">Building</label>
+                <select id="building-select" required class="form-control pointer" name="building_id">
+                    <option value="">--- Select ---</option>
+                </select>
+            </div>
+            <div id="battery" class="form-group battery">
+                <label for="battery">Battery</label>
+                <select id="battery-select" class="form-control pointer" name="battery_id">
+                    <option value="">--- Select ---</option>
+                </select>
+            </div>
+            <div id="column" class="form-group column">
+                <label for="column">Column</label>
+                <select id="column-select" class="form-control pointer" name="column_id">
+                    <option selected value="">--- Select ---</option>
+                </select>
+            </div>
+            <div id="elevator" class="form-group  elevator">
+                <label for="elevator">Elevator</label>
+                <select id="elevator-select" class="form-control pointer" name="elevator_id">
+                    <option selected value="">--- Select ---</option>
+                </select>
+            </div>
+            <div class="form-group description">
+                <label>Description</label>
+                <textarea required class="form-control" name="description" id="description" rows="3" placeholder="Enter ..."></textarea>
+            </div>
         </div>
-        <div class="form-group ">
-            <label for="building">Building</label>
-            <select id="building-select" required class="form-control pointer" name="building_id">
-                <option value="">--- Select ---</option>
-            </select>
-        </div>
-        <div id="battery" class="form-group battery">
-            <label for="battery">Battery</label>
-            <select id="battery-select" class="form-control pointer" name="battery_id">
-                <option value="">--- Select ---</option>
-            </select>
-        </div>
-        <div id="column" class="form-group column">
-            <label for="column">Column</label>
-            <select id="column-select" class="form-control pointer" name="column_id">
-                <option selected value="">--- Select ---</option>
-            </select>
-        </div>
-        <div id="elevator" class="form-group  elevator">
-            <label for="elevator">Elevator</label>
-            <select id="elevator-select" class="form-control pointer" name="elevator_id">
-                <option selected value="">--- Select ---</option>
-            </select>
-        </div>
-        <div class="form-group description">
-            <label>Description</label>
-            <textarea required class="form-control" name="description" id="description" rows="3" placeholder="Enter ..."></textarea>
-        </div>
-    </div>
 
-    <div class="col-md-12">
-        <button type="submit" class="btn btn-primary btn-lg btn-block" id="btnIntervention"><i></i> SUBMIT INTERVENTION</button>
+        <div class="col-md-12">
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="btnIntervention"><i></i> SUBMIT INTERVENTION</button>
+        </div>
     </div>
 </form>
